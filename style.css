@@ -1,0 +1,49 @@
+tr{
+    font-size: 10;
+}
+
+body{
+    background-color: black;
+}
+
+
+
+.numbtn{
+    width: 30px;
+    height: 30px;
+    margin: 10;
+    color: white;
+    background-color: darkgrey;
+    border: 1px solid black;
+}
+.numbtn:active{
+    background-color: grey;
+}
+
+.calbtn{
+    width: 30px;
+    height: 30px;
+    margin: 10;
+    color: white;
+    background-color: orange;
+    border: 1px solid black;
+
+}
+
+.funcbtn{
+    width: 30px;
+    height: 30px;
+    margin: 10;
+    background-color: gainsboro;
+    border: 1px solid black;
+
+}
+#btn0{
+    width: 60px;
+
+}
+
+#result_box{
+    background-color: black;
+    color: white;
+}
