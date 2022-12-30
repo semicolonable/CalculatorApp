@@ -41,7 +41,7 @@ body{
     transition: background-color,color 0.2s;
 }
 .calbtn:active{
-    background-color: lightsalmon;
+    background-color: #ffc286;
 }
 
 .funcbtn{
