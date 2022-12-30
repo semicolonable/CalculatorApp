@@ -1,6 +1,3 @@
-tr{
-    font-size: 10;
-}
 
 body{
     background-color: black;
@@ -9,41 +6,65 @@ body{
 
 
 .numbtn{
-    width: 30px;
-    height: 30px;
-    margin: 10;
+    width: 50px;
+    height: 50px;
     color: white;
     background-color: darkgrey;
-    border: 1px solid black;
+    text-align: center;
+    line-height: 52.5px;
+    border-radius: 50%;
+    font-size: 25px;
+    transition: background-color 0.2s;
 }
+
+#btn0{
+
+    width: 105px;
+    border-radius: 50px / 50px;
+    text-align:20%;
+}
+
 .numbtn:active{
     background-color: grey;
 }
 
 .calbtn{
-    width: 30px;
-    height: 30px;
+    width: 50px;
+    height: 50px;
     margin: 10;
     color: white;
     background-color: orange;
-    border: 1px solid black;
-
+    text-align: center;
+    line-height: 52.5px;
+    border-radius: 50%;
+    font-size: 25px;
+    transition: background-color,color 0.2s;
+}
+.calbtn:active{
+    background-color: lightsalmon;
 }
 
 .funcbtn{
-    width: 30px;
-    height: 30px;
+    width: 50px;
+    height: 50px;
     margin: 10;
     background-color: gainsboro;
-    border: 1px solid black;
-
+    text-align: center;
+    line-height: 52.5px;
+    border-radius: 50%;
+    font-size: 20px;
+    transition: background-color 0.2s;
 }
-#btn0{
-    width: 60px;
-
+.funcbtn:active{
+    background-color: white;
 }
 
 #result_box{
+    width: 210px;
+    height: 100px;
+    font-size: 50px;
+    text-align: right;
     background-color: black;
     color: white;
+    line-height: 160px;
 }

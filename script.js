@@ -1,4 +1,4 @@
-let resultBox = document.querySelector("#result_box");
+let resultBox = document.querySelector("#result");
 let userValue = 0;
 
 
@@ -18,16 +18,19 @@ function init() {
     }
     // sign init
     document.querySelector("#btn_AC").addEventListener('click', function () {
-        userValue=0;
-        resultBox.value = 0;
+        userValue = 0;
+        resultBox.innerText = 0;
+        accentOFF();
     })
     document.querySelector("#btn_switch").addEventListener('click', function () {
         userValue *= -1;
-        resultBox.value = 0 + userValue;
+        resultBox.innerText = 0 + userValue;
+        accentOFF();
     })
     document.querySelector("#btn_percentage").addEventListener('click', function () {
         userValue /= 100;
-        resultBox.value = 0 + userValue;
+        resultBox.innerText = 0 + userValue;
+        accentOFF();
     })
 
     document.querySelector("#btn_divide").addEventListener('click', function () {
@@ -37,14 +40,10 @@ function init() {
     })
     document.querySelector("#btn_minus").addEventListener('click', function () {
     })
-    let sumBtn = document.querySelector("#btn_sum"); 
-    sumBtn.addEventListener('click', function() {
-        sumBtn.style.backgroundColor= 'white';
-        sumBtn.style.color= 'orange';
-
-        
-
-        
+    let sumBtn = document.querySelector("#btn_sum");
+    sumBtn.addEventListener('click', function () {
+        sumBtn.style.backgroundColor = 'white';
+        sumBtn.style.color = 'orange';
     })
     document.querySelector("#btn_equal").addEventListener('click', function () {
     })
@@ -52,28 +51,31 @@ function init() {
 
 function submitBtn(value) {
     console.log("submitBtn()");
-    if (resultBox.value == 0) {
+    if (resultBox.innerText == 0) {
         userValue = value;
-        resultBox.value = userValue;
+        // resultBox.value = userValue;
+        resultBox.innerText = userValue;
     }
     else {
         userValue = userValue + value;
-        resultBox.value = userValue;
+        // resultBox.value = userValue;
+        resultBox.innerText = userValue;
     }
 }
 
-function getResult(num1, num2, x){
+function getResult(num1, num2, x) {
 
 }
 
-function summary(){
+function summary() {
 
 }
 
-function accentOFF(){
+function accentOFF() {
     document.querySelector("#btn_sum").style.backgroundColor = 'orange';
-    document.querySelector("#btn_sum").style.color= 'white';
+    document.querySelector("#btn_sum").style.color = 'white';
 }
+
 
 
 
